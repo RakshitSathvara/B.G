@@ -1,0 +1,323 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="8dp"
+    android:orientation="vertical"
+    android:weightSum="4">
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/card_campaign_list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="8dp">
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:src="@drawable/ic_action_sign_hand" />
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="4"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tv_compignName_foodList"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:ellipsize="marquee"
+                    android:singleLine="true"
+                    android:text="Contrary to popular belief, Lorem ipsum"
+                    android:textSize="14sp" />
+
+
+                <TextView
+                    android:id="@+id/tv_compignAmount_foodList"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:gravity="center"
+                    android:text="45000\u0024"
+                    android:textColor="@color/colorPrimary" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/tv_compignDate_foodList"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:layout_weight="1"
+                        android:text="26/05/2016"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="11sp" />
+
+                    <TextView
+                        android:id="@+id/tv_compignDonation_foodList"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_weight="1"
+                        android:background="@drawable/buttonshape_green_new"
+                        android:gravity="center"
+                        android:padding="5dp"
+                        android:text="Donation"
+                        android:textSize="8sp" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="2dp"
+                android:layout_height="60dp"
+                android:layout_gravity="center"
+                android:layout_margin="3dp"
+                android:background="#CCC" />
+
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="4"
+                android:gravity="right"
+                android:orientation="vertical"
+                android:weightSum="2">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:weightSum="2.3">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1.2"
+                        android:text="Help People"
+                        android:textSize="12sp" />
+
+                    <ImageView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:src="@drawable/ic_action_person" />
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:orientation="horizontal"
+                    android:weightSum="3">
+
+                    <TextView
+                        android:id="@+id/tv_compignView_foodList"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_weight="1"
+                        android:background="@drawable/buttonshape_green_new"
+                        android:gravity="center"
+                        android:padding="5dp"
+                        android:text="View"
+                        android:textSize="8sp" />
+
+
+                    <TextView
+                        android:id="@+id/tv_compignComment_foodList"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:drawableLeft="@drawable/ic_action_comment"
+                        android:gravity="center"
+                        android:text="87"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:id="@+id/tv_compignStar_foodList"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:drawableLeft="@drawable/ic_action_like"
+                        android:gravity="center"
+                        android:text="87"
+                        android:textColor="@color/colorPrimary" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </android.support.v7.widget.CardView>
+
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/card_compignApproved_foodList"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp">
+
+
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:background="@android:color/transparent"
+            card_view:cardCornerRadius="4dp"
+            card_view:cardElevation="0dp">
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/back" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginTop="8dp"
+                    android:src="@drawable/approve_new" />
+
+            </FrameLayout>
+
+        </android.support.v7.widget.CardView>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="8dp">
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:src="@drawable/ic_action_sign_hand" />
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="4"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tv_compignNameApproved_foodList"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:ellipsize="marquee"
+                    android:lines="2"
+                    android:text="Contrary to popular belief, Lorem ipsum" />
+
+
+                <TextView
+                    android:id="@+id/tv_compignAmountApproved_foodList"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:gravity="center"
+                    android:text="45000\u0024"
+                    android:textColor="@color/colorPrimary" />
+
+                <TextView
+                    android:id="@+id/tv_compignDateApproved_foodList"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:gravity="center"
+                    android:text="26/05/2016"
+                    android:textColor="@color/colorPrimary" />
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2.5"
+                android:gravity="right"
+                android:orientation="vertical"
+                android:weightSum="2">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:weightSum="2">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Help People"
+                        android:textSize="12sp" />
+
+                    <ImageView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:src="@drawable/ic_action_person" />
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:orientation="horizontal"
+                    android:weightSum="2">
+
+                    <TextView
+                        android:id="@+id/tv_compignCommentApproved_foodList"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:drawableLeft="@drawable/ic_action_comment"
+                        android:gravity="center"
+                        android:text="87"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:id="@+id/tv_compignStarApproved_foodList"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:drawableLeft="@drawable/ic_action_like"
+                        android:gravity="center"
+                        android:text="87"
+                        android:textColor="@color/colorPrimary" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </android.support.v7.widget.CardView>
+
+</LinearLayout>

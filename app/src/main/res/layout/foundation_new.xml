@@ -1,0 +1,251 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="20dp"
+        android:orientation="vertical"
+        android:padding="10dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginRight="5dp"
+                android:layout_weight="1"
+                android:gravity="right"
+                android:text="First Name" />
+
+            <EditText
+                android:id="@+id/et_fname_profileUserSide"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="3"
+                android:background="@drawable/ractangle_shap"
+                android:hint="XYZ"
+                android:padding="8dp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginRight="5dp"
+                android:layout_weight="1"
+                android:gravity="right"
+                android:text="Last Name" />
+
+            <EditText
+                android:id="@+id/et_lname_profileUserSide"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="3"
+                android:background="@drawable/ractangle_shap"
+                android:hint="XYZ"
+                android:padding="8dp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginRight="5dp"
+                android:layout_weight="1"
+                android:gravity="right"
+                android:text="Address" />
+
+            <EditText
+                android:id="@+id/et_address_profileUserSide"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="3"
+                android:background="@drawable/ractangle_shap"
+                android:hint="XYZ"
+                android:padding="8dp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginRight="5dp"
+                android:layout_weight="1"
+                android:gravity="right"
+                android:text="Email" />
+
+            <EditText
+                android:id="@+id/et_email_profileUserSide"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="3"
+                android:background="@drawable/ractangle_shap"
+                android:hint="xyz@gmail.com"
+                android:padding="8dp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginRight="5dp"
+                android:layout_weight="1"
+                android:gravity="right"
+                android:text="Password" />
+
+            <EditText
+                android:id="@+id/et_password_profileUserSide"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="3"
+                android:background="@drawable/ractangle_shap"
+                android:hint="Fsakdn"
+                android:padding="8dp" />
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:background="@color/colorPrimary"
+            android:orientation="horizontal"
+            android:padding="10dp"
+            android:text="Notification"
+            android:textColor="#FFFFFF" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginRight="5dp"
+                android:layout_weight="3"
+                android:text="Reminder the campaigns:"
+                android:textSize="14sp" />
+
+            <Spinner
+                android:id="@+id/reminder_campaign"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="3"
+                android:background="@drawable/ractangle_shap"
+                android:padding="8dp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginRight="5dp"
+                android:layout_weight="3"
+                android:gravity="right"
+                android:text="Frequently to reminder the campagins"
+                android:textSize="14sp" />
+
+            <Spinner
+                android:id="@+id/requently_reminder"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="3"
+                android:background="@drawable/ractangle_shap"
+                android:padding="8dp" />
+
+        </LinearLayout>
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:background="@color/colorPrimary"
+            android:orientation="horizontal"
+            android:padding="10dp"
+            android:text="Sound"
+            android:textColor="#FFFFFF" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="6"
+                android:text="Sound effect:"
+                android:textSize="15sp" />
+
+            <com.kyleduo.switchbutton.SwitchButton
+                android:id="@+id/toggle_sound_profileUserSide"
+                style="@style/SwitchButtonStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="true"
+                app:kswTintColor="@color/colorPrimary" />
+
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btn_save_profileUserSide"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/buttonshape_blue"
+            android:text="accept and save"
+            android:textColor="#FFFFFF" />
+    </LinearLayout>
+</ScrollView>

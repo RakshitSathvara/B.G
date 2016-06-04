@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    android:orientation="vertical">
+
+    <include layout="@layout/toolbar" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="10sp"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/img_clothes"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/aaaa" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_gravity="center"
+                android:src="@drawable/aa" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="5dp">
+
+                <TextView
+                    android:id="@+id/tv_donationType_clothes"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="2dp"
+                    android:text="Clothes the families in Bolivia" />
+
+                <TextView
+                    android:id="@+id/tv_content_clothes"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:maxLines="2"
+                    android:padding="2dp"
+                    android:text="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Rest: " />
+
+            <TextView
+                android:id="@+id/tv_days_clothes"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="31" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="days" />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:src="@drawable/bb" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="4"
+                android:text="Follow the location camoaign row"
+                android:textSize="13sp" />
+
+            <TextView
+                android:id="@+id/tv_donation_clothes"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:background="@drawable/buttonshape_green_new"
+                android:gravity="center"
+                android:padding="7dp"
+                android:text="Donation" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:orientation="horizontal"
+            android:weightSum="3">
+
+            <ImageView
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:layout_weight="1"
+                android:src="@drawable/clothes" />
+
+            <ImageView
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:layout_weight="1"
+                android:src="@drawable/rating" />
+
+            <ImageView
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:layout_weight="1"
+                android:src="@drawable/family" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="8dp"
+                android:src="@drawable/ic_action_comment" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:orientation="horizontal"
+                android:padding="5dp">
+
+                <TextView
+                    android:id="@+id/tv_comment_clothes"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="495"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:text="days" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:text="about SOS Africa" />
+            </LinearLayout>
+
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>
