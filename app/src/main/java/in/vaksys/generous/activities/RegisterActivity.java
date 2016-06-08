@@ -25,7 +25,7 @@ public class RegisterActivity extends AppCompatActivity {
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
         ToolbarRegister.setTitle("Register");
 
-        btnRegister = (Button) findViewById(R.id.btn_register);
+        btnRegister = (Button) findViewById(R.id.btn_registerClick_register);
 
         btnRegister.setOnClickListener(new View.OnClickListener() {
             @Override
