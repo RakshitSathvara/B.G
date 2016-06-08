@@ -15,7 +15,7 @@ public class FoundationFragment extends Fragment {
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
-        View rootView = inflater.inflate(R.layout.home_screen, container, false);
+        View rootView = inflater.inflate(R.layout.fragment_foundation_main, container, false);
 
         return rootView;
     }
