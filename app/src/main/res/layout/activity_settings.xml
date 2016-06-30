@@ -19,6 +19,7 @@
         android:background="@color/colorPrimary"
         android:fitsSystemWindows="true"
         app:tabGravity="fill"
+        style="@style/MyAppTheme"
         app:tabIndicatorColor="@color/colorPrimary"
         app:tabIndicatorHeight="3dp"
         app:tabMode="fixed"

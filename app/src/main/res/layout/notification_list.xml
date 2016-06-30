@@ -25,6 +25,7 @@
 
             <TextView
                 android:id="@+id/tv_notificationContent_list"
+                style="@style/MyAppTheme"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="7"
@@ -36,6 +37,7 @@
 
         <TextView
             android:id="@+id/tv_notificationDate_list"
+            style="@style/MyAppTheme"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="bottom|right"

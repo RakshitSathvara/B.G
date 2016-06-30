@@ -18,6 +18,7 @@
 
             <EditText
                 android:id="@+id/et_fname_register"
+                style="@style/MyAppTheme"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:background="@drawable/ractangle_border"
@@ -26,12 +27,13 @@
                 android:hint="First Name"
                 android:paddingLeft="15dp"
                 android:singleLine="true"
-                android:textColor="#000"
-                android:textColorHint="#000000"
+                android:textColor="@color/dark_gray"
+                android:textColorHint="@color/dark_gray"
                 android:textSize="14sp" />
 
             <EditText
                 android:id="@+id/et_name_register"
+                style="@style/MyAppTheme"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="8dp"
@@ -41,12 +43,13 @@
                 android:hint="Name"
                 android:paddingLeft="15dp"
                 android:singleLine="true"
-                android:textColor="#000"
-                android:textColorHint="#000000"
+                android:textColor="@color/dark_gray"
+                android:textColorHint="@color/dark_gray"
                 android:textSize="14sp" />
 
             <EditText
                 android:id="@+id/et_email_register"
+                style="@style/MyAppTheme"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="8dp"
@@ -56,12 +59,13 @@
                 android:hint="Email"
                 android:paddingLeft="15dp"
                 android:singleLine="true"
-                android:textColor="#000"
-                android:textColorHint="#000000"
+                android:textColor="@color/dark_gray"
+                android:textColorHint="@color/dark_gray"
                 android:textSize="14sp" />
 
             <EditText
                 android:id="@+id/et_password_register"
+                style="@style/MyAppTheme"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="8dp"
@@ -72,20 +76,28 @@
                 android:inputType="textPassword"
                 android:paddingLeft="15dp"
                 android:singleLine="true"
-                android:textColor="#000"
-                android:textColorHint="#000000"
+                android:textColor="@color/dark_gray"
+                android:textColorHint="@color/dark_gray"
                 android:textSize="14sp" />
 
-            <Spinner
-                android:id="@+id/sp_country_register"
+            <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="8dp"
                 android:background="@drawable/ractangle_border"
-                android:paddingLeft="15dp" />
+                android:gravity="center"
+                android:paddingLeft="10dp">
+
+                <Spinner
+                    android:id="@+id/sp_country_register"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
 
             <EditText
                 android:id="@+id/et_city_register"
+                style="@style/MyAppTheme"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="8dp"
@@ -95,8 +107,8 @@
                 android:hint="City"
                 android:paddingLeft="15dp"
                 android:singleLine="true"
-                android:textColor="#000"
-                android:textColorHint="#000000"
+                android:textColor="@color/dark_gray"
+                android:textColorHint="@color/dark_gray"
                 android:textSize="14sp" />
 
             <LinearLayout
@@ -115,46 +127,55 @@
 
                     <RadioButton
                         android:id="@+id/rb_person_register"
+                        style="@style/MyAppTheme"
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
                         android:checked="true"
                         android:text="Person"
+                        android:textColor="@color/dark_gray"
                         android:textSize="14sp" />
 
                     <RadioButton
                         android:id="@+id/rb_foundation_register"
+                        style="@style/MyAppTheme"
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
                         android:text="Foundation"
+                        android:textColor="@color/dark_gray"
                         android:textSize="14sp" />
                 </RadioGroup>
 
             </LinearLayout>
 
             <TextView
+                style="@style/MyAppTheme"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="10dp"
                 android:padding="2dp"
                 android:text="By clicking on the register button, you Agree to the Terms of Uses BGenerous."
+                android:textColor="@color/dark_gray"
                 android:textSize="16sp" />
 
             <Button
                 android:id="@+id/btn_registerClick_register"
-                android:layout_width="wrap_content"
+                style="@style/MyAppTheme"
+                android:layout_width="250dp"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
                 android:layout_marginBottom="5dp"
                 android:layout_marginTop="15dp"
                 android:background="@drawable/buttonshape_blue"
                 android:text="Register"
+                android:textAllCaps="true"
                 android:textColor="#FFFFFF"
-                android:textSize="16sp" />
+                android:textSize="18sp" />
 
             <TextView
                 android:id="@+id/tv_allReadyAccount_register"
+                style="@style/MyAppTheme"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="8dp"
