@@ -1,10 +1,13 @@
 package in.vaksys.generous.activities;
 
+import android.content.Intent;
 import android.location.Location;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.View;
+import android.widget.EditText;
+import android.widget.LinearLayout;
 import android.widget.TextView;
 
 import com.google.android.gms.maps.CameraUpdateFactory;
@@ -16,18 +19,48 @@ import com.google.android.gms.maps.model.LatLng;
 import com.google.android.gms.maps.model.Marker;
 import com.google.android.gms.maps.model.MarkerOptions;
 
+import butterknife.Bind;
+import butterknife.ButterKnife;
 import in.vaksys.generous.R;
 
 public class LocationActivity extends AppCompatActivity implements OnMapReadyCallback, GoogleMap.OnMapLongClickListener {
 
     GoogleMap mMap;
     Location location;
+    @Bind(R.id.tv_follow_donation_location)
+    TextView tvFollowDonationLocation;
     private Toolbar toolbar;
+    private Marker marker;
+    private EditText etSearchMap;
+    private View searchMap;
+    private LinearLayout linearSearch;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_location);
+        ButterKnife.bind(this);
+
+        linearSearch = (LinearLayout) findViewById(R.id.linear_Search);
+        searchMap = findViewById(R.id.linearSearchOnMap);
+        searchMap.setVisibility(View.GONE);
+
+        tvFollowDonationLocation.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(LocationActivity.this, FollowDonationActivity.class));
+            }
+        });
+
+        etSearchMap = (EditText) findViewById(R.id.et_searchMap);
+
+        etSearchMap.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                linearSearch.setVisibility(View.GONE);
+                searchMap.setVisibility(View.VISIBLE);
+            }
+        });
 
 //        mMap = ((SupportMapFragment) getSupportFragmentManager()
 //                .findFragmentById(R.id.map)).getMap();
@@ -100,7 +133,8 @@ public class LocationActivity extends AppCompatActivity implements OnMapReadyCal
         setSupportActionBar(toolbar);
         getSupportActionBar().setHomeButtonEnabled(true);
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
-        toolbar.setLogo(R.drawable.untitled_1);
+        toolbar.setLogo(R.drawable.icon);
+
         toolbar.setTitle("Generous");
 
         SupportMapFragment mapFragment = (SupportMapFragment) getSupportFragmentManager()
@@ -159,18 +193,18 @@ public class LocationActivity extends AppCompatActivity implements OnMapReadyCal
 
 
         LatLng bhagwatiHolidays = new LatLng(23.025819, 72.5096982);
-        mMap.addMarker(new MarkerOptions().position(bhagwatiHolidays).title("One").icon(BitmapDescriptorFactory.fromResource(R.drawable.map_pin2)));
+        mMap.addMarker(new MarkerOptions().position(bhagwatiHolidays).title("One").icon(BitmapDescriptorFactory.fromResource(R.drawable.map_pin)));
         mMap.moveCamera(CameraUpdateFactory.newLatLng(bhagwatiHolidays));
         mMap.animateCamera(CameraUpdateFactory.zoomTo(14), 2000, null);
 
         LatLng bhagwatiHolidays1 = new LatLng(23.0258349, 72.5096782);
-        mMap.addMarker(new MarkerOptions().position(bhagwatiHolidays1).title("Two").icon(BitmapDescriptorFactory.fromResource(R.drawable.map_pin1)));
+        mMap.addMarker(new MarkerOptions().position(bhagwatiHolidays1).title("Two").icon(BitmapDescriptorFactory.fromResource(R.drawable.map_pin)));
         mMap.moveCamera(CameraUpdateFactory.newLatLng(bhagwatiHolidays1));
         mMap.animateCamera(CameraUpdateFactory.zoomTo(14), 2000, null);
 
 
         LatLng bhagwatiHolidays2 = new LatLng(23.0289819, 72.5096912);
-        mMap.addMarker(new MarkerOptions().position(bhagwatiHolidays2).title("Three").icon(BitmapDescriptorFactory.fromResource(R.drawable.map_pin2)));
+        mMap.addMarker(new MarkerOptions().position(bhagwatiHolidays2).title("Three").icon(BitmapDescriptorFactory.fromResource(R.drawable.map_pin)));
         mMap.moveCamera(CameraUpdateFactory.newLatLng(bhagwatiHolidays2));
         mMap.animateCamera(CameraUpdateFactory.zoomTo(14), 2000, null);
     }
@@ -179,18 +213,18 @@ public class LocationActivity extends AppCompatActivity implements OnMapReadyCal
     public void onMapLongClick(LatLng latLng) {
 
         LatLng bhagwatiHolidays = new LatLng(23.025819, 72.5096982);
-        mMap.addMarker(new MarkerOptions().position(bhagwatiHolidays).title("One").icon(BitmapDescriptorFactory.fromResource(R.drawable.map_pin2)));
+        mMap.addMarker(new MarkerOptions().position(bhagwatiHolidays).title("One").icon(BitmapDescriptorFactory.fromResource(R.drawable.map_pin)));
         mMap.moveCamera(CameraUpdateFactory.newLatLng(bhagwatiHolidays));
         mMap.animateCamera(CameraUpdateFactory.zoomTo(14), 2000, null);
 
-        LatLng bhagwatiHolidays1 = new LatLng(23.0258349, 72.5096782);
-        mMap.addMarker(new MarkerOptions().position(bhagwatiHolidays1).title("Two").icon(BitmapDescriptorFactory.fromResource(R.drawable.map_pin1)));
+        LatLng bhagwatiHolidays1 = new LatLng(23.0258349, 72.5096763);
+        mMap.addMarker(new MarkerOptions().position(bhagwatiHolidays1).title("Two").icon(BitmapDescriptorFactory.fromResource(R.drawable.map_pin)));
         mMap.moveCamera(CameraUpdateFactory.newLatLng(bhagwatiHolidays1));
         mMap.animateCamera(CameraUpdateFactory.zoomTo(14), 2000, null);
 
 
         LatLng bhagwatiHolidays2 = new LatLng(23.0289819, 72.5096912);
-        mMap.addMarker(new MarkerOptions().position(bhagwatiHolidays2).title("Three").icon(BitmapDescriptorFactory.fromResource(R.drawable.map_pin2)));
+        mMap.addMarker(new MarkerOptions().position(bhagwatiHolidays2).title("Three").icon(BitmapDescriptorFactory.fromResource(R.drawable.map_pin)));
         mMap.moveCamera(CameraUpdateFactory.newLatLng(bhagwatiHolidays2));
         mMap.animateCamera(CameraUpdateFactory.zoomTo(14), 2000, null);
     }
@@ -207,17 +241,21 @@ public class LocationActivity extends AppCompatActivity implements OnMapReadyCal
         @Override
         public View getInfoContents(Marker marker) {
 
-            TextView tvTitle = ((TextView) myContentsView.findViewById(R.id.title));
-            tvTitle.setText(marker.getTitle());
-            TextView tvSnippet = ((TextView) myContentsView.findViewById(R.id.snippet));
-            tvSnippet.setText(marker.getSnippet());
-
+//            TextView tvTitle = ((TextView) myContentsView.findViewById(R.id.title));
+//            tvTitle.setText(marker.getTitle());
+//            TextView tvSnippet = ((TextView) myContentsView.findViewById(R.id.snippet));
+//            tvSnippet.setText(marker.getSnippet());
+            myContentsView.setLayoutParams(new LinearLayout.LayoutParams(LinearLayout.LayoutParams.WRAP_CONTENT, LinearLayout.LayoutParams.WRAP_CONTENT));
             return myContentsView;
         }
 
         @Override
         public View getInfoWindow(Marker marker) {
-            // TODO Auto-generated method stub
+            if (LocationActivity.this.marker != null
+                    && LocationActivity.this.marker.isInfoWindowShown()) {
+                LocationActivity.this.marker.hideInfoWindow();
+                LocationActivity.this.marker.showInfoWindow();
+            }
             return null;
         }
 

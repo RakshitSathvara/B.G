@@ -235,6 +235,15 @@
         <include
             android:id="@+id/click_btn_giveDonation"
             layout="@layout/campaign_user_side_two" />
+
+
+        <include
+            android:id="@+id/click_btn_campaign"
+            layout="@layout/campines" />
+
+        <include
+            android:id="@+id/click_btn_clothes_comment"
+            layout="@layout/clothes_comment_list" />
     </FrameLayout>
 
 </LinearLayout>

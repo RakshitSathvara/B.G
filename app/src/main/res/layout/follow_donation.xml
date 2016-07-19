@@ -19,6 +19,7 @@
             android:layout_gravity="center"
             android:layout_weight="1"
             android:text="Find the campaigns where I participated."
+            android:textColor="@color/dark_gray"
             android:textSize="14sp" />
 
         <LinearLayout
@@ -57,6 +58,7 @@
             <LinearLayout
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
+                android:layout_marginLeft="3dp"
                 android:layout_weight="3"
                 android:orientation="vertical">
 
@@ -65,26 +67,30 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:ellipsize="marquee"
+                    android:lines="2"
+                    android:maxLines="2"
                     android:singleLine="true"
                     android:text="Contrary to popular belief, Lorem ipsum"
-                    android:textSize="14sp" />
+                    android:textColor="@color/dark_gray"
+                    android:textSize="12sp" />
 
 
                 <TextView
                     style="@style/MyAppTheme"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginTop="8dp"
+                    android:layout_marginTop="15dp"
                     android:gravity="center"
                     android:text="45000\u0024"
-                    android:textColor="@color/colorPrimary" />
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="12sp" />
 
 
                 <TextView
                     style="@style/MyAppTheme"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginTop="8dp"
+                    android:layout_marginTop="15dp"
                     android:gravity="bottom"
                     android:text="26/05/2016"
                     android:textColor="@color/colorPrimary"
@@ -132,6 +138,7 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:text="Help People"
+                            android:textColor="@color/dark_gray"
                             android:textSize="12sp" />
 
                     </LinearLayout>
@@ -163,6 +170,7 @@
                         android:gravity="center"
                         android:padding="5dp"
                         android:text="View"
+                        android:textColor="#FFFFFF"
                         android:textSize="8sp" />
 
 
@@ -226,9 +234,12 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:ellipsize="marquee"
+                    android:lines="2"
+                    android:maxLines="2"
                     android:singleLine="true"
                     android:text="Contrary to popular belief, Lorem ipsum"
-                    android:textSize="14sp" />
+                    android:textColor="@color/dark_gray"
+                    android:textSize="12sp" />
 
 
                 <TextView
@@ -238,7 +249,8 @@
                     android:layout_marginTop="8dp"
                     android:gravity="center"
                     android:text="45000\u0024"
-                    android:textColor="@color/colorPrimary" />
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="12sp" />
 
 
                 <TextView
@@ -250,6 +262,22 @@
                     android:text="26/05/2016"
                     android:textColor="@color/colorPrimary"
                     android:textSize="11sp" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="right"
+                    android:background="@color/colorPrimary"
+                    android:orientation="horizontal"
+                    android:padding="3dp">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:src="@drawable/ic_star_black_36dp" />
+
+                </LinearLayout>
 
 
             </LinearLayout>
@@ -293,6 +321,7 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:text="Help People"
+                            android:textColor="@color/dark_gray"
                             android:textSize="12sp" />
 
                     </LinearLayout>
@@ -324,6 +353,7 @@
                         android:gravity="center"
                         android:padding="5dp"
                         android:text="View"
+                        android:textColor="#FFFFFF"
                         android:textSize="8sp" />
 
 
@@ -387,9 +417,12 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:ellipsize="marquee"
+                    android:lines="2"
+                    android:maxLines="2"
                     android:singleLine="true"
                     android:text="Contrary to popular belief, Lorem ipsum"
-                    android:textSize="14sp" />
+                    android:textColor="@color/dark_gray"
+                    android:textSize="12sp" />
 
 
                 <TextView
@@ -399,7 +432,8 @@
                     android:layout_marginTop="8dp"
                     android:gravity="center"
                     android:text="45000\u0024"
-                    android:textColor="@color/colorPrimary" />
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="12sp" />
 
 
                 <TextView
@@ -412,6 +446,21 @@
                     android:textColor="@color/colorPrimary"
                     android:textSize="11sp" />
 
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="right"
+                    android:background="@color/colorPrimary"
+                    android:orientation="horizontal"
+                    android:padding="3dp">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:src="@drawable/ic_star_black_36dp" />
+
+                </LinearLayout>
 
             </LinearLayout>
 
@@ -454,6 +503,7 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:text="Help People"
+                            android:textColor="@color/dark_gray"
                             android:textSize="12sp" />
 
                     </LinearLayout>
@@ -485,6 +535,7 @@
                         android:gravity="center"
                         android:padding="5dp"
                         android:text="View"
+                        android:textColor="#FFFFFF"
                         android:textSize="8sp" />
 
 

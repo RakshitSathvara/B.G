@@ -29,11 +29,13 @@
                 android:hint="Name of Campaign"
                 android:paddingLeft="15dp"
                 android:singleLine="true"
+                android:lines="1"
+                android:maxLines="1"
                 android:textColor="@color/dark_gray"
                 android:textColorHint="@color/dark_gray"
                 android:textSize="14sp" />
 
-            <EditText
+            <TextView
                 android:id="@+id/et_uploadPicture_registerCampaign"
                 style="@style/MyAppTheme"
                 android:layout_width="match_parent"
@@ -43,7 +45,7 @@
                 android:drawablePadding="20dp"
                 android:drawableRight="@drawable/ic_action_upload"
                 android:gravity="center_vertical"
-                android:hint="Upload picture"
+                android:text="Upload picture"
                 android:paddingLeft="15dp"
                 android:paddingRight="10dp"
                 android:singleLine="true"
@@ -63,6 +65,8 @@
                 android:hint="Total Amount"
                 android:paddingLeft="15dp"
                 android:singleLine="true"
+                android:lines="1"
+                android:maxLines="1"
                 android:textColor="@color/dark_gray"
                 android:textColorHint="@color/dark_gray"
                 android:textSize="14sp" />
@@ -79,6 +83,8 @@
                 android:hint="Amount per beneficeary"
                 android:inputType="textPassword"
                 android:paddingLeft="15dp"
+                android:lines="1"
+                android:maxLines="1"
                 android:singleLine="true"
                 android:textColor="@color/dark_gray"
                 android:textColorHint="@color/dark_gray"
@@ -96,6 +102,8 @@
                 android:hint="Number of beneficiary"
                 android:paddingLeft="15dp"
                 android:singleLine="true"
+                android:lines="1"
+                android:maxLines="1"
                 android:textColor="@color/dark_gray"
                 android:textColorHint="@color/dark_gray"
                 android:textSize="14sp" />
@@ -104,6 +112,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="8dp"
+                android:padding="5dp"
                 android:background="@drawable/ractangle_border"
                 android:orientation="vertical">
 
@@ -112,6 +121,7 @@
                     style="@style/MyAppTheme"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:layout_gravity="center"
                     android:gravity="center_vertical" />
 
             </LinearLayout>
@@ -123,11 +133,11 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="8dp"
                 android:background="@drawable/ractangle_border"
-                android:drawablePadding="20dp"
                 android:gravity="center_vertical"
                 android:hint="Descreptive of the campagn"
                 android:paddingLeft="15dp"
-                android:singleLine="true"
+                android:lines="5"
+                android:maxLines="5"
                 android:textColor="@color/dark_gray"
                 android:textColorHint="@color/dark_gray"
                 android:textSize="14sp" />
@@ -190,6 +200,8 @@
                     android:background="@drawable/ractangle_border_small"
                     android:gravity="center"
                     android:hint="Start Date"
+                    android:lines="1"
+                    android:maxLines="1"
                     android:textColor="@color/dark_gray"
                     android:textColorHint="@color/dark_gray"
                     android:textSize="12sp" />
@@ -210,6 +222,8 @@
                     android:layout_weight="2"
                     android:background="@drawable/ractangle_border_small"
                     android:gravity="center"
+                    android:lines="1"
+                    android:maxLines="1"
                     android:hint="Start Time"
                     android:textColor="@color/dark_gray"
                     android:textColorHint="@color/dark_gray"
@@ -231,6 +245,8 @@
                     android:layout_weight="2"
                     android:background="@drawable/ractangle_border_small"
                     android:gravity="center"
+                    android:lines="1"
+                    android:maxLines="1"
                     android:hint="End Time"
                     android:textColor="@color/dark_gray"
                     android:textColorHint="@color/dark_gray"
@@ -280,13 +296,14 @@
                 android:layout_width="250dp"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
-                android:layout_marginBottom="10dp"
+                android:layout_marginBottom="20dp"
                 android:layout_marginTop="15dp"
                 android:background="@drawable/buttonshape_blue"
                 android:padding="15dp"
-                android:text="Accept Mmd set the campaign"
+                android:text="Accept and set the campaign"
+                android:textAllCaps="true"
                 android:textColor="#FFFFFF"
-                android:textSize="14sp" />
+                android:textSize="12sp" />
 
         </LinearLayout>
     </LinearLayout>

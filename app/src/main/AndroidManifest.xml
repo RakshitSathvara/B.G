@@ -58,10 +58,13 @@
             android:label="Register Campaign" />
         <activity
             android:name=".activities.WelcomeActivity"
-            android:theme="@style/splashScreenTheme">
-
-        </activity>
+            android:theme="@style/splashScreenTheme" />
+        <activity
+            android:name=".activities.NotificationActivity"
+            android:label="Notification" />
+        <activity
+            android:name=".activities.FollowDonationActivity"
+            android:label="Follow Donation"></activity>
     </application>
-
 
 </manifest>

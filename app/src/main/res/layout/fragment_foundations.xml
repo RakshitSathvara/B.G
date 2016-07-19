@@ -2,7 +2,8 @@
 <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:background="#FFFFFF">
 
     <LinearLayout
         android:id="@+id/linar_fragment_foundation"
@@ -85,7 +86,8 @@
                     android:layout_gravity="center"
                     android:layout_weight="1"
                     android:gravity="center"
-                    android:text="Status of doundation" />
+                    android:text="Status of Foundation"
+                    android:textColor="@color/dark_gray" />
 
                 <LinearLayout
                     android:layout_width="0dp"

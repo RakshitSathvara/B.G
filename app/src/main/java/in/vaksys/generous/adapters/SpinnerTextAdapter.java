@@ -49,7 +49,7 @@ public class SpinnerTextAdapter extends BaseAdapter {
         if (convertView == null) {
             rootView = inflater.inflate(R.layout.text_spinner, null);
             mItemHolder = new ItemHolder();
-            mItemHolder.textOne = (TextView) rootView.findViewById(R.id.spin_text);
+            mItemHolder.textOne = (TextView) rootView.findViewById(R.id.spin_text_without);
             rootView.setTag(mItemHolder);
         } else {
             mItemHolder = (ItemHolder) rootView.getTag();

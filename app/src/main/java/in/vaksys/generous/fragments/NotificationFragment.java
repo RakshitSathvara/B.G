@@ -16,9 +16,8 @@ import in.vaksys.generous.adapters.SpinnerTextAdapter;
 public class NotificationFragment extends Fragment {
 
     private Spinner spNotiNameOfCompaign, spotificationRecieptDonations;
-    String[] status = {"Status of the foundation", "International organization", "State organization",
-            "Organization approved by the state", "Other"};
-    private String[] dates = {"3 Days", "5 Days", "10 Days", "9 Days", "7 Days", "2 Days"};
+    String[] status = {"All the donations", "Other donations than money", "Only money"};
+    private String[] dates = {"2 Days", "3 Days", "4 Days", "5 Days", "7 Days", "10 Days"};
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,

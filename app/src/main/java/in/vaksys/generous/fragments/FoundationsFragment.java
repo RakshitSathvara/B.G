@@ -22,7 +22,8 @@ public class FoundationsFragment extends Fragment implements View.OnClickListene
     View foundation_new;
     Button btnSave;
 
-    String[] titles = {"Type of Donation accepted?", "Cash", "Check", "Debit-card"};
+    String[] titles = {"Type of Donation accepted?", "Cash", "Drugs or health equipment", "Books","Computer accessories"
+            ,"Furniture or appliances","Other Donations"};
     String[] status = {"Status of the foundation", "International organization", "State organization",
             "Organization approved by the state", "Other"};
 

@@ -1,7 +1,10 @@
 package in.vaksys.generous.activities;
 
+import android.app.Dialog;
 import android.content.Context;
 import android.content.Intent;
+import android.graphics.Color;
+import android.graphics.drawable.ColorDrawable;
 import android.os.Bundle;
 import android.support.design.widget.TabLayout;
 import android.support.v4.app.FragmentManager;
@@ -12,6 +15,7 @@ import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
 import android.view.View;
+import android.view.Window;
 import android.widget.ImageView;
 import android.widget.TextView;
 
@@ -29,6 +33,7 @@ public class MainActivity extends AppCompatActivity {
     //final ViewPagerAdapter adapter = new ViewPagerAdapter(getSupportFragmentManager());
     private Toolbar toolbar;
     private ImageView toolImage;
+    private Dialog dialog;
 
     SmartTabLayout viewPagerTab;
 
@@ -234,6 +239,17 @@ public class MainActivity extends AppCompatActivity {
             case R.id.action_map:
                 startActivity(new Intent(MainActivity.this, LocationActivity.class));
                 finish();
+                break;
+            case R.id.action_notification:
+                startActivity(new Intent(MainActivity.this, NotificationActivity.class));
+                finish();
+                break;
+            case R.id.like:
+                dialog = new Dialog(MainActivity.this);
+                dialog.requestWindowFeature(Window.FEATURE_NO_TITLE);
+                dialog.setContentView(R.layout.interface_three);
+                dialog.getWindow().setBackgroundDrawable(new ColorDrawable(Color.TRANSPARENT));
+                dialog.show();
                 break;
             default:
                 return super.onOptionsItemSelected(item);

@@ -1,10 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
     tools:context="in.vaksys.generous.activities.LocationActivity">
+
+    <LinearLayout
+        android:id="@+id/linear_Search"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
 
     <include
         android:id="@+id/tool"
@@ -19,6 +25,7 @@
             layout="@layout/toolbar" />
 
         <EditText
+            android:id="@+id/et_searchMap"
             style="@style/MyAppTheme"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -50,6 +57,7 @@
             android:layout_height="match_parent"
             android:layout_gravity="center_horizontal|top" />
 
+
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
@@ -65,12 +73,11 @@
                 android:layout_weight="1"
                 android:background="#84C991"
                 android:gravity="center"
-                android:lines="1"
-                android:padding="15dp"
+                android:padding="10dp"
                 android:text="Rate Campaign"
                 android:textAllCaps="true"
                 android:textColor="#FFFFFF"
-                android:textSize="8dp" />
+                android:textSize="10dp" />
 
             <TextView
                 style="@style/MyAppTheme"
@@ -81,27 +88,32 @@
                 android:layout_weight="1"
                 android:background="#84C991"
                 android:gravity="center"
-                android:lines="1"
-                android:padding="15dp"
+                android:padding="10dp"
                 android:text="save my visit"
                 android:textAllCaps="true"
                 android:textColor="#FFFFFF"
-                android:textSize="8dp" />
+                android:textSize="10dp" />
 
             <TextView
+                android:id="@+id/tv_follow_donation_location"
                 style="@style/MyAppTheme"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_gravity="right|top"
                 android:layout_weight="1"
                 android:background="#84C991"
-                android:lines="1"
-                android:padding="15dp"
+                android:padding="10dp"
                 android:text="follow donations"
                 android:textAllCaps="true"
                 android:textColor="#FFFFFF"
                 android:textSize="8dp" />
+
         </LinearLayout>
+
     </FrameLayout>
 
-</LinearLayout>
+    </LinearLayout>
+    <include
+        android:id="@+id/linearSearchOnMap"
+        layout="@layout/search_campaign"/>
+</FrameLayout>

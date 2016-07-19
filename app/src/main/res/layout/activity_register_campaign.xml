@@ -27,6 +27,7 @@
                 android:layout_margin="16dp"
                 android:orientation="vertical">
 
+
                 <TextView
                     style="@style/MyAppTheme"
                     android:layout_width="match_parent"
@@ -36,6 +37,121 @@
                     android:text="Campaign"
                     android:textColor="#FFFFFF"
                     android:textSize="14sp" />
+
+
+                <!--<TextView
+                    style="@style/MyAppTheme"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="8dp"
+                    android:background="@drawable/ractangle_shap_fill"
+                    android:drawableRight="@drawable/ic_action_upload_image"
+                    android:hint="Picture of campaign"
+                    android:lines="1"
+                    android:padding="5dp"
+                    android:textColor="@color/dark_gray"
+                    android:textColorHint="@color/dark_gray"
+                    android:textSize="12sp" />-->
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:background="@drawable/ractangle_shap_fill"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="10dp"
+                        android:layout_weight="4"
+                        android:text="Picture of campaign"
+                        android:visibility="visible" />
+
+                    <!--<LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:visibility="visible">
+
+                        <ImageView
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:layout_margin="5dp"
+                            android:src="@drawable/aa" />
+
+                        <ImageView
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:layout_margin="5dp"
+                            android:src="@drawable/aa" />
+
+                        <ImageView
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:layout_margin="5dp"
+                            android:src="@drawable/aa" />
+
+                        <ImageView
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:layout_margin="5dp"
+                            android:src="@drawable/aa" />
+
+                        <ImageView
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:layout_margin="5dp"
+                            android:src="@drawable/aa" />
+                    </LinearLayout>-->
+
+                    <ImageView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center|right"
+                        android:layout_weight="1"
+                        android:src="@drawable/ic_action_upload_image" />
+
+                    <ImageView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center|right"
+                        android:layout_weight="1"
+                        android:src="@drawable/ic_action_upload_image" />
+
+
+                    <ImageView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center|right"
+                        android:layout_weight="1"
+                        android:src="@drawable/ic_action_upload_image" />
+
+                </LinearLayout>
+
+                <!--<LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:src="@drawable/upload" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:text="Upload Image"
+                        android:textColor="@color/dark_gray"
+                        android:textSize="14sp" />
+                </LinearLayout>-->
 
                 <EditText
                     style="@style/MyAppTheme"
@@ -105,7 +221,7 @@
                         android:layout_marginRight="5dp"
                         android:layout_weight="2"
                         android:background="@drawable/ractangle_shap"
-                        android:hint="Number Per Beneficiary"
+                        android:hint="Number of Beneficiary"
                         android:lines="1"
                         android:padding="8dp"
                         android:textColor="@color/dark_gray"
@@ -120,6 +236,7 @@
                         android:background="@drawable/ractangle_shap">
 
                         <Spinner
+                            android:id="@+id/sp_typeBenef"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:layout_gravity="center" />
@@ -220,6 +337,91 @@
                     android:textColor="#FFFFFF"
                     android:textSize="14sp" />
 
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:background="@drawable/ractangle_shap_fill"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="10dp"
+                        android:layout_weight="4"
+                        android:text="Logo of foundation"
+                        android:visibility="visible" />
+
+                    <!--<LinearLayout-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:orientation="horizontal"-->
+                    <!--android:visibility="visible">-->
+
+                    <!--<ImageView-->
+                    <!--android:layout_width="50dp"-->
+                    <!--android:layout_height="50dp"-->
+                    <!--android:layout_margin="5dp"-->
+                    <!--android:src="@drawable/aa" />-->
+
+                    <!--<ImageView-->
+                    <!--android:layout_width="50dp"-->
+                    <!--android:layout_height="50dp"-->
+                    <!--android:layout_margin="5dp"-->
+                    <!--android:src="@drawable/aa" />-->
+
+                    <!--<ImageView-->
+                    <!--android:layout_width="50dp"-->
+                    <!--android:layout_height="50dp"-->
+                    <!--android:layout_margin="5dp"-->
+                    <!--android:src="@drawable/aa" />-->
+
+                    <!--<ImageView-->
+                    <!--android:layout_width="50dp"-->
+                    <!--android:layout_height="50dp"-->
+                    <!--android:layout_margin="5dp"-->
+                    <!--android:src="@drawable/aa" />-->
+
+                    <!--<ImageView-->
+                    <!--android:layout_width="50dp"-->
+                    <!--android:layout_height="50dp"-->
+                    <!--android:layout_margin="5dp"-->
+                    <!--android:src="@drawable/aa" />-->
+                    <!--</LinearLayout>-->
+
+
+                    <ImageView
+                        android:id="@+id/img_foundation"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center|right"
+                        android:layout_weight="1"
+                        android:src="@drawable/ic_action_upload_image" />
+
+                </LinearLayout>
+
+                <!--<LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:src="@drawable/upload" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:text="Upload Image"
+                        android:textColor="@color/dark_gray"
+                        android:textSize="14sp" />
+                </LinearLayout>-->
+
                 <EditText
                     style="@style/MyAppTheme"
                     android:layout_width="match_parent"
@@ -245,7 +447,7 @@
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
                         android:background="@drawable/ractangle_shap"
-                        android:hint="Total Amount"
+                        android:hint="Create Date"
                         android:lines="1"
                         android:padding="8dp"
                         android:textColor="@color/dark_gray"

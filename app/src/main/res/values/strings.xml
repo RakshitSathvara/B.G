@@ -6,13 +6,13 @@
     
     <string name="give_donation">
         1. You only pay when the campaign is successful;\n
-        2. You can Follow any times your donations\n
+        2. You can Follow any times your donations
         minutley with BGenerous maps;\n
-        3. You can giving marks and comments to the \n
+        3. You can giving marks and comments to the
         Foundations (ranking best foundations).\n
         4.The foundation commits to use donation only in
         this campaign.\n
-        5.The BGenerous auditors visit the \n
+        5.The BGenerous auditors visit the
         campaign realization and give marks.
     </string>
 
@@ -29,16 +29,18 @@
     </string>
 
 
-    <string name="next">NEXT</string>
+    <string name="next">Get Started</string>
     <string name="skip">SKIP</string>
-    <string name="start">GOT IT</string>
+    <string name="start">Get Started</string>
 
-    <string name="slide_1_desc">Innovation in the field of charitable and humanitarian action.</string>
+    <string name="slide_1_desc">Innovation in the police of charitable and humanitarian action.</string>
 
     <string name="slide_2_desc">Making charity is to feel happiness. Choose the Campaign to want support.</string>
 
     <string name="slide_3_desc">Follow your donations and make sure that everything was done as desired.</string>
 
     <string name="slide_4_desc">Get involved more with Giving marks to projects and build a reference for all.</string>
+
+    <string name="xyz">Do you accept to give a few of your time to assiste and evaluate the campaign named diner for refugie</string>
 
 </resources>

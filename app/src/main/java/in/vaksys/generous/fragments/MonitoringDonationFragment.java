@@ -7,6 +7,7 @@ import android.support.v7.widget.CardView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.TextView;
@@ -112,13 +113,15 @@ public class MonitoringDonationFragment extends Fragment implements View.OnClick
         rightArrow = (LinearLayout) rootView.findViewById(R.id.iv_right_arrow);
         leftArrow = (ImageView) rootView.findViewById(R.id.iv_left_arrow);
 
+        Button rightArrow1 = (Button) rootView.findViewById(R.id.iv_right_arrow1);
+
         one.setVisibility(View.GONE);
         two.setVisibility(View.GONE);
 
         card_main_one.setOnClickListener(this);
         rightArrow.setOnClickListener(this);
         leftArrow.setOnClickListener(this);
-
+        rightArrow1.setOnClickListener(this);
 
         return rootView;
     }
@@ -140,6 +143,12 @@ public class MonitoringDonationFragment extends Fragment implements View.OnClick
                 two.setVisibility(View.GONE);
                 one.setVisibility(View.GONE);
                 three.setVisibility(View.VISIBLE);
+                break;
+
+            case R.id.iv_right_arrow1:
+                two.setVisibility(View.VISIBLE);
+                one.setVisibility(View.GONE);
+                three.setVisibility(View.GONE);
                 break;
 
         }

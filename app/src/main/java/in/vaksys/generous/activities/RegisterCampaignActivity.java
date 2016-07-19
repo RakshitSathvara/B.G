@@ -12,12 +12,15 @@ import in.vaksys.generous.adapters.SpinnerTextAdapter;
 public class RegisterCampaignActivity extends AppCompatActivity {
 
     Toolbar tool;
-    Spinner sp_recu, sp_status_foundation;
+    Spinner sp_recu, sp_status_foundation, sp_typeBenef;
     String[] titles = {"Type of Donation accepted?", "Clothes", "Drugs or Health equipment", "Books", "Computer accessories",
             "Furniture or appliances", "Other Donations"};
 
     String[] status = {"Status of the foundation", "International organization", "State organization",
             "Organization approved by the state", "Other"};
+
+    String[] typeBenef = {"Type of beneficiary", "One", "Two",
+            "Three", "Other"};
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -29,13 +32,15 @@ public class RegisterCampaignActivity extends AppCompatActivity {
 
         sp_recu = (Spinner) findViewById(R.id.sp_recu);
         sp_status_foundation = (Spinner) findViewById(R.id.sp_status_foundation);
+        sp_typeBenef = (Spinner) findViewById(R.id.sp_typeBenef);
 
         SpinnerTextAdapter spinnerTextAdapter = new SpinnerTextAdapter(this, status);
         sp_status_foundation.setAdapter(spinnerTextAdapter);
 
         SpinnerCheckboxAdapter spinnerCheckboxAdapter = new SpinnerCheckboxAdapter(this, titles);
-
-        // attaching data adapter to spinner
         sp_recu.setAdapter(spinnerCheckboxAdapter);
+
+        SpinnerTextAdapter spinnerTextAdapter1 = new SpinnerTextAdapter(this, typeBenef);
+        sp_typeBenef.setAdapter(spinnerTextAdapter1);
     }
 }

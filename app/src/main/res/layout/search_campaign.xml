@@ -46,7 +46,7 @@
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
                 android:layout_weight="1"
-                android:src="@drawable/ic_action_sign_hand" />
+                android:src="@drawable/extra" />
 
             <LinearLayout
                 android:layout_width="0dp"
@@ -59,19 +59,23 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:ellipsize="marquee"
+                    android:lines="1"
+                    android:maxLines="1"
                     android:singleLine="true"
                     android:text="Contrary to popular belief, Lorem ipsum"
-                    android:textSize="14sp" />
+                    android:textColor="@color/dark_gray"
+                    android:textSize="12sp" />
 
 
                 <TextView
                     style="@style/MyAppTheme"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginTop="8dp"
+                    android:layout_marginTop="10dp"
                     android:gravity="center"
                     android:text="45000\u0024"
-                    android:textColor="@color/colorPrimary" />
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="12sp" />
 
 
                 <TextView
@@ -81,7 +85,7 @@
                     android:layout_marginTop="8dp"
                     android:gravity="bottom"
                     android:text="26/05/2016"
-                    android:textColor="#000000"
+                    android:textColor="@color/dark_gray"
                     android:textSize="11sp" />
 
 
@@ -112,41 +116,61 @@
                     <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
+                        android:layout_marginLeft="3dp"
                         android:layout_weight="1.2"
-                        android:orientation="vertical">
+                        android:orientation="horizontal">
 
                         <ImageView
                             android:layout_width="30dp"
                             android:layout_height="30dp"
                             android:src="@drawable/extra_one" />
 
-
-                        <TextView
-                            style="@style/MyAppTheme"
+                        <LinearLayout
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:layout_marginTop="8dp"
-                            android:gravity="center"
-                            android:text="Help People"
-                            android:textSize="12sp" />
+                            android:orientation="vertical">
 
+
+                            <TextView
+                                style="@style/MyAppTheme"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:gravity="center"
+                                android:text="I have a Dream"
+                                android:textColor="@color/dark_gray"
+                                android:textSize="12sp" />
+
+                            <TextView
+                                style="@style/MyAppTheme"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_marginTop="15dp"
+                                android:background="@drawable/small_shap"
+                                android:padding="5dp"
+                                android:text="View map"
+                                android:textColor="#FFFFFF"
+                                android:textSize="8sp" />
+
+                        </LinearLayout>
                     </LinearLayout>
 
 
                 </LinearLayout>
 
 
-                <TextView
+                <!--<TextView
                     style="@style/MyAppTheme"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
                     android:layout_marginTop="8dp"
-                    android:background="@drawable/buttonshape_green_new"
+                    android:background="@drawable/small_shap"
                     android:gravity="center"
                     android:padding="5dp"
-                    android:text="View"
-                    android:textSize="8sp" />
+                    android:text="View map"
+                    android:textColor="#FFFFFF"
+                    android:textSize="8sp" />-->
 
 
             </LinearLayout>
@@ -171,7 +195,7 @@
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
                 android:layout_weight="1"
-                android:src="@drawable/ic_action_sign_hand" />
+                android:src="@drawable/extra" />
 
             <LinearLayout
                 android:layout_width="0dp"
@@ -184,19 +208,23 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:ellipsize="marquee"
+                    android:lines="1"
+                    android:maxLines="1"
                     android:singleLine="true"
                     android:text="Contrary to popular belief, Lorem ipsum"
-                    android:textSize="14sp" />
+                    android:textColor="@color/dark_gray"
+                    android:textSize="12sp" />
 
 
                 <TextView
                     style="@style/MyAppTheme"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginTop="8dp"
+                    android:layout_marginTop="10dp"
                     android:gravity="center"
                     android:text="45000\u0024"
-                    android:textColor="@color/colorPrimary" />
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="12sp" />
 
 
                 <TextView
@@ -206,7 +234,7 @@
                     android:layout_marginTop="8dp"
                     android:gravity="bottom"
                     android:text="26/05/2016"
-                    android:textColor="#000000"
+                    android:textColor="@color/dark_gray"
                     android:textSize="11sp" />
 
 
@@ -237,41 +265,48 @@
                     <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
+                        android:layout_marginLeft="3dp"
                         android:layout_weight="1.2"
-                        android:orientation="vertical">
+                        android:orientation="horizontal">
 
                         <ImageView
                             android:layout_width="30dp"
                             android:layout_height="30dp"
                             android:src="@drawable/extra_one" />
 
-
-                        <TextView
-                            style="@style/MyAppTheme"
+                        <LinearLayout
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:layout_marginTop="8dp"
-                            android:gravity="center"
-                            android:text="Help People"
-                            android:textSize="12sp" />
+                            android:orientation="vertical">
+
+                            <TextView
+                                style="@style/MyAppTheme"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:gravity="center"
+                                android:text="I have a Dream"
+                                android:textColor="@color/dark_gray"
+                                android:textSize="12sp" />
+
+                            <TextView
+                                style="@style/MyAppTheme"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_marginTop="15dp"
+                                android:background="@drawable/small_shap"
+                                android:padding="5dp"
+                                android:text="View map"
+                                android:textColor="#FFFFFF"
+                                android:textSize="8sp" />
+
+                        </LinearLayout>
+
 
                     </LinearLayout>
 
 
                 </LinearLayout>
-
-
-                <TextView
-                    style="@style/MyAppTheme"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center"
-                    android:layout_marginTop="8dp"
-                    android:background="@drawable/buttonshape_green_new"
-                    android:gravity="center"
-                    android:padding="5dp"
-                    android:text="View"
-                    android:textSize="8sp" />
 
 
             </LinearLayout>
@@ -296,11 +331,12 @@
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
                 android:layout_weight="1"
-                android:src="@drawable/ic_action_sign_hand" />
+                android:src="@drawable/extra" />
 
             <LinearLayout
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
+                android:layout_marginLeft="3dp"
                 android:layout_weight="3"
                 android:orientation="vertical">
 
@@ -309,19 +345,23 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:ellipsize="marquee"
+                    android:lines="1"
+                    android:maxLines="1"
                     android:singleLine="true"
                     android:text="Contrary to popular belief, Lorem ipsum"
-                    android:textSize="14sp" />
+                    android:textColor="@color/dark_gray"
+                    android:textSize="12sp" />
 
 
                 <TextView
                     style="@style/MyAppTheme"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginTop="8dp"
+                    android:layout_marginTop="10dp"
                     android:gravity="center"
                     android:text="45000\u0024"
-                    android:textColor="@color/colorPrimary" />
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="12sp" />
 
 
                 <TextView
@@ -331,7 +371,7 @@
                     android:layout_marginTop="8dp"
                     android:gravity="bottom"
                     android:text="26/05/2016"
-                    android:textColor="#000000"
+                    android:textColor="@color/dark_gray"
                     android:textSize="11sp" />
 
 
@@ -362,8 +402,9 @@
                     <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
+                        android:layout_marginLeft="3dp"
                         android:layout_weight="1.2"
-                        android:orientation="vertical">
+                        android:orientation="horizontal">
 
                         <ImageView
                             android:layout_width="30dp"
@@ -371,32 +412,38 @@
                             android:src="@drawable/extra_one" />
 
 
-                        <TextView
-                            style="@style/MyAppTheme"
+                        <LinearLayout
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:layout_marginTop="8dp"
-                            android:gravity="center"
-                            android:text="Help People"
-                            android:textSize="12sp" />
+                            android:orientation="vertical">
+
+                            <TextView
+                                style="@style/MyAppTheme"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:gravity="center"
+                                android:text="I have a Dream"
+                                android:textColor="@color/dark_gray"
+                                android:textSize="12sp" />
+
+                            <TextView
+                                style="@style/MyAppTheme"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_marginTop="15dp"
+                                android:background="@drawable/small_shap"
+                                android:padding="5dp"
+                                android:text="View map"
+                                android:textColor="#FFFFFF"
+                                android:textSize="8sp" />
+
+                        </LinearLayout>
 
                     </LinearLayout>
 
 
                 </LinearLayout>
-
-
-                <TextView
-                    style="@style/MyAppTheme"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center"
-                    android:layout_marginTop="8dp"
-                    android:background="@drawable/buttonshape_green_new"
-                    android:gravity="center"
-                    android:padding="5dp"
-                    android:text="View"
-                    android:textSize="8sp" />
 
 
             </LinearLayout>

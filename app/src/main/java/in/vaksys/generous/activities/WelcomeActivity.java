@@ -5,6 +5,7 @@ import android.content.Intent;
 import android.graphics.Color;
 import android.os.Build;
 import android.os.Bundle;
+import android.os.Handler;
 import android.support.v4.view.PagerAdapter;
 import android.support.v4.view.ViewPager;
 import android.support.v7.app.AppCompatActivity;
@@ -18,6 +19,9 @@ import android.widget.Button;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 
+import java.util.Timer;
+import java.util.TimerTask;
+
 import in.vaksys.generous.R;
 import in.vaksys.generous.extras.PrefManager;
 
@@ -30,17 +34,19 @@ public class WelcomeActivity extends AppCompatActivity {
     private int[] layouts;
     private Button btnSkip, btnNext;
     private PrefManager prefManager;
+    private int NUM_PAGES = 5;
+    int currentPage = 0;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
         // Checking for first time launch - before calling setContentView()
-        prefManager = new PrefManager(this);
-        if (!prefManager.isFirstTimeLaunch()) {
-            launchHomeScreen();
-            finish();
-        }
+//        prefManager = new PrefManager(this);
+//        if (!prefManager.isFirstTimeLaunch()) {
+//            launchHomeScreen();
+//            finish();
+//        }
 
         // Making notification bar transparent
         if (Build.VERSION.SDK_INT >= 21) {
@@ -73,6 +79,28 @@ public class WelcomeActivity extends AppCompatActivity {
         viewPager.setAdapter(myViewPagerAdapter);
         viewPager.addOnPageChangeListener(viewPagerPageChangeListener);
 
+
+        final Handler handler = new Handler();
+
+        final Runnable update = new Runnable() {
+            public void run() {
+
+                if (currentPage == NUM_PAGES - 1) {
+                    currentPage = 0;
+                }
+                viewPager.setCurrentItem(currentPage++, true);
+            }
+        };
+
+
+        new Timer().schedule(new TimerTask() {
+
+            @Override
+            public void run() {
+                handler.post(update);
+            }
+        }, 3000, 3000);
+
         btnSkip.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -85,13 +113,14 @@ public class WelcomeActivity extends AppCompatActivity {
             public void onClick(View v) {
                 // checking for last page
                 // if last page home screen will be launched
-                int current = getItem(+1);
-                if (current < layouts.length) {
-                    // move to next screen
-                    viewPager.setCurrentItem(current);
-                } else {
-                    launchHomeScreen();
-                }
+//                int current = getItem(+1);
+//                if (current < layouts.length) {
+//                    // move to next screen
+//                    viewPager.setCurrentItem(current);
+//                } else {
+//                    launchHomeScreen();
+//                }
+                launchHomeScreen();
             }
         });
     }
@@ -120,7 +149,7 @@ public class WelcomeActivity extends AppCompatActivity {
     }
 
     private void launchHomeScreen() {
-        prefManager.setFirstTimeLaunch(false);
+        //prefManager.setFirstTimeLaunch(false);
         startActivity(new Intent(WelcomeActivity.this, LoginActivity.class));
         finish();
     }
