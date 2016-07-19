@@ -5,13 +5,10 @@ import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.ArrayAdapter;
 import android.widget.Spinner;
 
-import java.util.ArrayList;
-import java.util.List;
-
 import in.vaksys.generous.R;
+import in.vaksys.generous.adapters.SpinnerTextAdapter;
 
 /**
  * Created by dell980 on 6/2/2016.
@@ -19,14 +16,22 @@ import in.vaksys.generous.R;
 public class NotificationFragment extends Fragment {
 
     private Spinner spNotiNameOfCompaign, spotificationRecieptDonations;
+    String[] status = {"All the donations", "Other donations than money", "Only money"};
+    private String[] dates = {"2 Days", "3 Days", "4 Days", "5 Days", "7 Days", "10 Days"};
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
-        View rootView = inflater.inflate(R.layout.comment, container, false);
+        View rootView = inflater.inflate(R.layout.fragment_notification, container, false);
 
-//        spNotiNameOfCompaign = (Spinner) rootView.findViewById(R.id.sp_notification_nameOfFoundation);
-//        spotificationRecieptDonations = (Spinner) rootView.findViewById(R.id.sp_notification_receiptDonation);
+        spNotiNameOfCompaign = (Spinner) rootView.findViewById(R.id.sp_notification_nameOfFoundation);
+        spotificationRecieptDonations = (Spinner) rootView.findViewById(R.id.sp_notification_receiptDonation);
+
+        SpinnerTextAdapter one = new SpinnerTextAdapter(getActivity(), dates);
+        spNotiNameOfCompaign.setAdapter(one);
+
+        SpinnerTextAdapter two = new SpinnerTextAdapter(getActivity(), status);
+        spotificationRecieptDonations.setAdapter(two);
 //
 //        List<String> categories = new ArrayList<String>();
 //        categories.add("3 Days");

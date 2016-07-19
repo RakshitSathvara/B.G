@@ -38,6 +38,34 @@ public class SettingsActivity extends AppCompatActivity {
 
         tabLayout = (TabLayout) findViewById(R.id.tabs);
         tabLayout.setupWithViewPager(viewPager);
+
+        viewPager.addOnPageChangeListener(new ViewPager.OnPageChangeListener() {
+            @Override
+            public void onPageScrolled(int position, float positionOffset, int positionOffsetPixels) {
+
+            }
+
+            @Override
+            public void onPageSelected(int position) {
+                if (position == 0) {
+                    toolbar.setTitle("Profile");
+                }
+
+                if (position == 1) {
+                    toolbar.setTitle("Notification");
+                }
+
+                if (position == 2) {
+                    toolbar.setTitle("Foundation");
+                }
+            }
+
+            @Override
+            public void onPageScrollStateChanged(int state) {
+
+            }
+        });
+
     }
 
     private void setupViewPager(ViewPager viewPager) {

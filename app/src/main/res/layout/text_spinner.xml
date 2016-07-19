@@ -5,10 +5,14 @@
     android:orientation="vertical">
 
     <TextView
+        android:id="@+id/spin_text_without"
+        style="@style/MyAppTheme"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:lines="1"
         android:padding="5dp"
         android:text="hello"
+        android:textColor="@color/dark_gray"
         android:textSize="12sp" />
 
 </LinearLayout>
