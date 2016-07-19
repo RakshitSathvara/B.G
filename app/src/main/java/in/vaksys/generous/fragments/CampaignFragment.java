@@ -134,7 +134,9 @@ public class CampaignFragment extends Fragment implements View.OnClickListener {
         clickCommentClothes = rootView.findViewById(R.id.click_btn_clothes_comment);
         commentClothes = (ImageView) rootView.findViewById(R.id.clothes_comment);
 
-        tvOK = (TextView) rootView.findViewById(R.id.tv_ok_comment);
+        tvOK = (TextView) clickCommentClothes.findViewById(R.id.tv_ok_comment);
+//        View view = rootView.findViewById(R.id.click_btn_clothes_comment)
+//        tvOK = (TextView) rootView.findViewById(R.id.tv_ok_comment);
 
         tvOK.setOnClickListener(new View.OnClickListener() {
             @Override
